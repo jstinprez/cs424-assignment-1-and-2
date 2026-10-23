@@ -5,6 +5,19 @@ My dataset grew from 15 to 35 responses (Sept 21 to Oct 20). My corporate contac
 
 
 ## Task 2: Prepare the data
+
+The data goes through one script, `code/01_clean.py`. It reads the original Google Forms export (`data/original/survey-responses-a2.csv`) and writes the cleaned version to `data/processed/survey_clean.csv`, which is what every chart uses. Running the script from the `assignment-2` folder rebuilds the processed file. No rows were dropped (35 in, 35 out).
+
+The main changes:
+- Shortened the long question text into column names, and turned timestamps into dates and hours.
+- Filled the blank location as "Unknown." The blank atmosphere rating stays blank.
+- Put visit frequency and age range in their natural order so charts sort correctly.
+- Split the new-items checkboxes into one true/false column per answer, then made a three-group summary: tried at least one, heard of them but haven't tried, and haven't heard of them. People who checked both "haven't tried" and "haven't heard" are in the last group.
+- Sorted the typed-in orders into groups by keyword (pizza only, pizza plus something else, no pizza, unclear), because almost everyone orders pizza and the exact wording adds little.
+- Flagged comments that mention price, since several do.
+
+The keyword grouping is my own rule, so a few orders could be grouped wrong.
+
 ## Task 3: Explore the data
 ## Task 4: Implement visualization alternatives
 ## Task 5: Interaction and multiple views
