@@ -6,7 +6,7 @@ My dataset grew from 15 to 35 responses (Sept 21 to Oct 20). My corporate contac
 
 ## Task 2: Prepare the data
 
-The data goes through one script, `code/01_clean.py`. It reads the original Google Forms export (`data/original/survey-responses-a2.csv`) and writes the cleaned version to `data/processed/survey_clean.csv`, which is what every chart uses. Running the script from the `assignment-2` folder rebuilds the processed file. No rows were dropped.
+The data goes through one script, `01_clean.py`. It reads the original Google Forms export (`data/survey-responses-a2.csv`) and writes the cleaned version to `data/survey_clean.csv`, which is what every chart uses. Running the script from the `assignment-2` folder rebuilds the processed file. No rows were dropped.
 
 The main changes:
 - Shortened the long question text into column names, and turned timestamps into dates and hours.
