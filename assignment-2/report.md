@@ -19,6 +19,28 @@ The main changes:
 The keyword grouping is my own rule, so a few orders could be grouped wrong.
 
 ## Task 3: Explore the data
+## Task 3: Explore the data
+
+I made four quick charts to see what the data could support. Each one counts responses.
+
+![Responses per day](figures/explore_1_responses_per_day.png)
+
+Responses came in bursts, not steadily. Most arrived on Sept 26-27 (9 responses), Oct 9-10 (12), and Oct 13 (4), with none between Oct 14 and Oct 19. The bursts mostly follow when the box toppers were in stock at the stores, so this chart shows how my data was collected, not how customers behave. That matters for any time-based view, because a pattern over time here would mostly reflect the box toppers.
+
+![Overall satisfaction](figures/explore_2_satisfaction_counts.png)
+
+This one was not useful. 26 of 35 gave a 5, and nobody gave a 2. A chart of the distribution is basically one tall bar, so I will not use it as a main direction. The only real low rating is a 3 with a food rating of 1 (a comment about sauce and salt).
+
+![Visit frequency by new items](figures/explore_3_frequency_by_new_items.png)
+
+This was the most interesting chart. Only 7 of 35 have tried a new item. Among the 23 regulars, 9 have not heard of the new items at all. That is surprising since regulars see the menu the most. Regulars were 23 of the 35 responses, so the overall numbers mostly describe regulars, and the first-time row has only 4 people, so I can’t read much into it.
+
+![Age range by order](figures/explore_4_age_by_order.png)
+
+Almost everyone orders pizza. All 10 clear orders in the 55+ group are pizza only, while the 25-54 groups have a few people ordering salad, wings, or extras. The groups are different sizes, so counts can mislead, and any pattern here rests on very few people.
+
+These charts changed my plan. The satisfaction chart showed there is too little variation to be a main chart, and the order chart showed I should compare "pizza only vs. more than pizza" instead of every order type.
+
 ## Task 4: Implement visualization alternatives
 ## Task 5: Interaction and multiple views
 ## Task 6: Iterate and refine
