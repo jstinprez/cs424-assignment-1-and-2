@@ -42,6 +42,26 @@ Almost everyone orders pizza. All 10 clear orders in the 55+ group are pizza onl
 These charts changed my plan. The satisfaction chart showed there is too little variation to be a main chart, and the order chart showed I should compare "pizza only vs. more than pizza" instead of every order type.
 
 ## Task 4: Implement visualization alternatives
+
+### Direction 1: Visit frequency by new items
+
+![Direction 1](figures/direction1_v1_frequency_grid.png)
+
+This supports the question of whether visit frequency relates to which new items people have tried or heard of. It uses visit frequency and the new-items answers. The marks are rectangles, and the channels are position (row and column), color lightness (share of that row), and a number (the count). I shaded by share instead of count because the rows are very different sizes. It shows that 3 of 4 first-timers have heard of the items but not tried them, and that regulars have the most people who never heard of them. The problem is that the three item columns overlap, since people could check several, so rows don't add up to 100%, and the small rows only have a few people. I am keeping this one.
+
+### Direction 2: Responses over time
+
+![Direction 2](figures/direction2_v1_response_timeline.png)
+
+This supports the question of when responses came in and whether low ratings cluster. It uses time, satisfaction, and location. The marks are points, and the channels are horizontal position (time), vertical position (satisfaction), and shape and color (location). It makes the bursts easy to see and shows the three low ratings are spread out. But almost everything is a 5, so the chart is flat, and the time pattern mostly shows when the box toppers were in stock, not how customers behave. I am abandoning it as a main chart, but it may be useful as a small context view.
+
+### Direction 3: What people ordered, by age range
+
+![Direction 3](figures/direction3_v1_age_order_units.png)
+
+This supports the question of whether orders differ by age. It uses age range and the order group. Each person is one mark, positioned by age group and stacked, with shape and color showing what they ordered. I used one mark per person so group sizes stay visible. It shows that all clear orders in the 55+ group are pizza only, while the 25-54 groups have a few people ordering more. But most marks are the same orange triangle, so there is not much to see, and stack height depends on how many people answered, so groups of different sizes are hard to compare. I would modify it if I keep it.
+
+
 ## Task 5: Interaction and multiple views
 ## Task 6: Iterate and refine
 ## Task 7: Current design
