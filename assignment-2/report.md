@@ -63,5 +63,12 @@ This supports the question of whether orders differ by age. It uses age range an
 
 
 ## Task 5: Interaction and multiple views
+
+![Interactive view, before clicking](figures/task5_interactive_start.png)
+![Interactive view, after clicking a bar](figures/task5_interactive_clicked.png)
+
+I added one interaction. When you click a part of a bar, a list shows up on the right with the people in that part: their age, what they ordered, and what they said. Hovering over a bar also shows the count and percent. I didn't add filters or dropdowns because there isn't enough data to need them.
+
+
 ## Task 6: Iterate and refine
 ## Task 7: Current design
