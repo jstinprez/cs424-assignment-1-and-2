@@ -6,7 +6,7 @@ My dataset grew from 15 to 35 responses (Sept 21 to Oct 20). My corporate contac
 
 ## Task 2: Prepare the data
 
-The data goes through one script, `01_clean.py`. It reads the original Google Forms export (`data/survey-responses-a2.csv`) and writes the cleaned version to `data/survey_clean.csv`, which is what every chart uses. Running the script from the `assignment-2` folder rebuilds the processed file. No rows were dropped.
+The data goes through one script, `01_clean.py`. It reads the original Google Forms export (`data/survey-responses-a2.csv`) and writes the cleaned version to `data/processed/survey_clean.csv`, which is what every chart uses. Running the script from the `assignment-2` folder rebuilds the processed file. No rows were dropped.
 
 The main changes:
 - Shortened the long question text into column names, and turned timestamps into dates and hours.
@@ -18,7 +18,6 @@ The main changes:
 
 The keyword grouping is my own rule, so a few orders could be grouped wrong.
 
-## Task 3: Explore the data
 ## Task 3: Explore the data
 
 I made four quick charts to see what the data could support. Each one counts responses.
@@ -98,7 +97,7 @@ After:
 
 **Problem:** the stacked bars no longer showed which items people tried. That was the main thing I lost in iteration 1.
 
-**Change:** I added a small bar chart next to the stacked bars that counts how many people tried each item: 3 calzones, 4 caramelized deep dish, and 3 gourmet popcorn. Those add up to more than the 10 people who tried something, since some people tried more than one.
+**Change:** I added a small bar chart next to the stacked bars that counts how many people tried each item: 3 calzones, 4 caramelized deep dish, and 3 gourmet popcorn. Those add up to 10, but only 7 people tried anything, since some people tried more than one item.”
 
 **Tradeoff:** the layout is more crowded, and the item chart is not split by visit frequency, so you can't see which kind of visitor tried which item.
 
@@ -113,7 +112,7 @@ The working version is `visualization.html` (the most recent one).
 
 **Main design decisions:** I used one bar per visit frequency, split into three groups that don't overlap, so you compare bar lengths instead of shades. I added a separate chart for which items were tried, since the bars don't show that. The click list is there because with 35 responses it's worth reading the actual comments.
 
-**How it differs from before:** my Assignment 1 sketches showed the survey as a set of simple charts. Direction 1 started as a shaded grid, then became stacked bars (iteration 1), then got the item chart (iteration 2), and finally the click list from Task 5. I dropped the timeline and the age chart because they were flat or not very useful.
+**How it differs from before:** my assignment 1 sketches included a histogram (sketch 2) and a shaded grid of the survey waves (sketch 3). Neither one is in the current design. The shaded grid idea did carry over into direction 1, which started as a shaded grid, then became stacked bars (iteration 1), then got the item chart (iteration 2), and finally the click list from task 5. The histogram of satisfaction didn't survive, because almost everyone gave a 5. I also dropped the timeline and the age chart because they were flat or not very useful.
 
 **What works:** the bars are easy to read, and the biggest gap (regulars who never heard of the new items) stands out. The list makes the numbers feel like real people.
 
