@@ -71,4 +71,36 @@ I added one interaction. When you click a part of a bar, a list shows up on the 
 
 
 ## Task 6: Iterate and refine
+
+I picked Direction 1 (visit frequency by new items) because it was the only one that answered a real question. The other two were mostly flat.
+
+### Iteration 1: shaded grid to stacked bars
+
+Before:
+![Grid](figures/direction1_v1_frequency_grid.png)
+
+After:
+![Stacked bars](figures/direction1_v2_stacked_bars.png)
+
+**Problem:** I was visually wary of the shading as something potentially difficult to distinguish among boxes. The colors were based on the share of each row. 
+
+**Change:** I regrouped everyone into three groups: tried at least one, heard of them but haven't tried, and haven't heard of them. Each visit frequency is now a bar from 0 to 100%, split into those groups, with the count written inside. Now you compare bar lengths, which is easier than comparing shades.
+
+**Tradeoff:** I lost which items people tried.
+
+### Iteration 2: add a chart of which items were tried
+
+Before:
+![Stacked bars](figures/direction1_v2_stacked_bars.png)
+
+After:
+![Stacked bars with item chart](figures/direction1_v3_item_bars.png)
+
+**Problem:** the stacked bars no longer showed which items people tried. That was the main thing I lost in iteration 1.
+
+**Change:** I added a small bar chart next to the stacked bars that counts how many people tried each item: 3 calzones, 4 caramelized deep dish, and 3 gourmet popcorn. Those add up to more than the 10 people who tried something, since some people tried more than one.
+
+**Tradeoff:** the layout is more crowded, and the item chart is not split by visit frequency, so you can't see which kind of visitor tried which item.
+
+
 ## Task 7: Current design
