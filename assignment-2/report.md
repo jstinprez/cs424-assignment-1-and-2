@@ -104,3 +104,19 @@ After:
 
 
 ## Task 7: Current design
+
+![Current design](figures/task7_final_design.png)
+
+The working version is `visualization.html` (the most recent one).
+
+**What it supports:** it answers whether people who visit more often have tried the new items, and which items got tried. Clicking a bar shows who is in that group and what they said. For example, 9 of the 23 regulars have never heard of the new items.
+
+**Main design decisions:** I used one bar per visit frequency, split into three groups that don't overlap, so you compare bar lengths instead of shades. I added a separate chart for which items were tried, since the bars don't show that. The click list is there because with 35 responses it's worth reading the actual comments.
+
+**How it differs from before:** my Assignment 1 sketches showed the survey as a set of simple charts. Direction 1 started as a shaded grid, then became stacked bars (iteration 1), then got the item chart (iteration 2), and finally the click list from Task 5. I dropped the timeline and the age chart because they were flat or not very useful.
+
+**What works:** the bars are easy to read, and the biggest gap (regulars who never heard of the new items) stands out. The list makes the numbers feel like real people.
+
+**What I'm unsure about:** the groups are small. First time is only 4 people, so the percentages for that bar can jump a lot. The item chart doesn't show who tried what. The list is empty until you click, and people might not realize it's clickable. The list also says "none tried" for people who tried nothing, which is a little repetitive.
+
+**What I want to evaluate in Assignment 3:** whether people notice that the bars are clickable, and whether they read the bars correctly (counts inside, percent as length). I also want to test whether the item chart is useful or just clutter, and whether the layout is clear.
